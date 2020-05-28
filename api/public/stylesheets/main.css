@@ -1,0 +1,104 @@
+html {
+  background-color: #F7F9F9;
+  color: #15141A;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, "sans-serif";
+}
+.nav-bar {
+  width: 100%;
+  background-color: #2C5674;
+}
+.nav-bar ul h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 100%;
+}
+.nav-bar ul li {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+.nav-bar ul li a {
+  color: white;
+}
+.nav-bar ul li a:hover {
+  color: #A44760;
+}
+.nav-bar button {
+  background-color: #A44760;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.login-modal {
+  background-color: #2C5674;
+  color: white;
+}
+main {
+  padding: 20px 20px;
+  overflow: hidden;
+}
+main a {
+  color: #2C5674;
+  text-decoration: none;
+}
+main p {
+  margin: 20px;
+  text-align: center;
+}
+main .carousel {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+main .carousel img {
+  height: 500px;
+}
+main .link-box {
+  margin: 5px;
+  text-align: center;
+}
+main .link-box a {
+  text-align: center;
+}
+.form-buttons {
+  background-color: #A44760;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  margin: 10px 10px;
+}
+footer {
+  background-color: #2C5674;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li {
+  padding: 5px;
+}
+@media (max-width: 750px) {
+  .nav-bar ul h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carousel-item {
+    height: 375px;
+    width: 325px;
+  }
+}

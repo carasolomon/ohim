@@ -1,0 +1,122 @@
+// Text color variables
+
+@link-color: #2C5674;
+@text-color: #15141A;
+@header-color: #A44760;
+@background-color: #2C5674;
+
+html {
+    background-color: #F7F9F9;
+    color: @text-color;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, "sans-serif";
+  }
+// navigation
+.nav-bar {
+    width: 100%;
+    background-color: @background-color;
+    ul {
+      h1 {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-right: 100px;
+        margin-left: 100px;
+        width: 100%;
+        }
+        li {
+      list-style-type: none;
+      display: inline-flex;
+      margin: 0 auto;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+        a {
+          color: white;
+        }
+      a:hover {
+        color: @header-color;
+      }}
+    }
+    button {
+      background-color: #A44760;
+      border-radius: 5px;
+      padding: 10px;
+      color: white;
+  }
+}
+.login-modal {
+  background-color: @background-color;
+  color: white;
+}
+// Main container
+main {
+  padding: 20px 20px;
+  overflow: hidden;
+  a {
+    color: @link-color;
+    text-decoration: none;
+  }
+  p {
+    margin: 20px;
+    text-align: center;
+  }
+  // carousel in main
+.carousel {
+  width: 1000px; 
+  margin: 0 auto;
+  padding-bottom: 25px;
+  img {
+    height: 500px;
+  }
+}
+  // content link boxes in main
+.link-box {
+  margin: 5px;
+  text-align: center;
+  a {
+    text-align: center;
+  }
+}
+}
+
+// all form buttons
+.form-buttons {
+  background-color: #A44760;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  margin: 10px 10px;
+}
+
+
+// Footer
+footer {
+    background-color: @background-color;
+    color: white;
+    ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    a {
+    color: white;
+    text-decoration: none;
+    }
+    li {
+      padding: 5px;
+    }
+  }
+}
+  // Media Queries
+  @media (max-width: 750px) {
+    .nav-bar ul h1 {
+      //padding-left: 30px;
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+   .carousel-item {
+    height: 375px;
+    width: 325px;
+    }}

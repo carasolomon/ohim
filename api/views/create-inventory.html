@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="robots" content="index, nofollow" />
+
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../public/stylesheets/main.css" rel="stylesheet">
+  <title>Online Home Inventory Manager | New Inventory File</title>
+</head>
+
+<body>
+  <!-- header-->
+  <nav class="nav-bar">
+    <ul>
+      <li>
+        <h1>Online Home Inventory Manager - New Inventory File</h1>
+      </li>
+    </ul>
+  </nav>
+  <!-- main content -->
+  <main>
+    <p>Create a new file to store the information about your items. Fill out the form below for each item.</p>
+    <!--inventory form - sent to api endpoint-->
+    <form method="POST" action="/addinventory" enctype="application/x-collection+json">
+      Email address:<br>
+      <input type="email" name="email" placeholder="email address" required><br>
+      <!-- add items -->
+      <div class="itemFormBlock">
+      Item type:<br>
+      <select name="Item Type">
+        <option value="Electronic" selected>Electronic</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Appliance">Appliance</option>
+      </select><br>
+      Cost:<br>
+      <input type="float" name="cost" placeholder="$1.00"><br>
+      Quantity:<br>
+      <input type="number" name="Quantity" placeholder="1"><br>
+      Date Acquired:<br>
+      <input type="date" name="dateacquired" placeholder="2018"><br>
+      Condition:<br>
+      <select name="Condition">
+        <option value="Excellent" selected>Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Some wear & tear">Some wear & tear</option>
+        <option value="Poor">Poor</option>
+      </select><br>
+      </div>
+     
+
+      <!-- form buttons -->
+      <input class="form-buttons" type="reset" value="Clear">
+      <input class="form-buttons" type="submit" value="Create">
+    </form>
+  </main>
+  <!--footer links -->
+  <footer>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a href="help.html">Help</a>
+      </li>
+    </ul>
+  </footer>
+  <!--scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="../public/javascripts/main.js"></script>
+</body>
+
+</html>

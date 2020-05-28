@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- required tags-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, nofollow" />
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../public/stylesheets/main.css" rel="stylesheet">
+    <title>Online Home Inventory Manager | View Inventory</title>
+</head>
+
+<body>
+    <!-- header-->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <h1>Online Home Inventory Manager - View Inventory</h1>
+            </li>
+        </ul>
+    </nav>
+    <!--main content-->
+    <main>
+        <!-- display inventory data using php in table -->
+        <table id="viewInventory" class="table" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Room</th>
+                    <th>Item Type</th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Quantity</th>
+                    <th>Date Acquired</th>
+                    <th>Condition</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example of php for data...
+
+		<?php foreach($emps as $key => $emp) :?>
+		<tr>
+		<td><?php echo $emp['employee_name'] ?></td>
+		<td><?php echo $emp['employee_salary'] ?></td>
+		<td><?php echo $emp['employee_age'] ?></td>
+		</tr>
+	<?php endforeach;?>-->
+            </tbody>
+        </table>
+
+        <!-- inventory buttons for editing data -->
+        <a href=""><button class="form-buttons">Download</button></a>
+        <a href=""><button class="form-buttons">Email</button></a>
+        <a href=""><button class="form-buttons">Add Items</button></a>
+        <a href=""><button class="form-buttons">Update Items</button></a>
+
+    </main>
+    <!-- footer links-->
+    <footer>
+    <ul>
+      <li>
+        <a href="index.html">Home</a> |
+      </li>
+      <li>
+        <a href="help.html">Help</a>
+      </li>
+    </ul>
+  </footer>
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
